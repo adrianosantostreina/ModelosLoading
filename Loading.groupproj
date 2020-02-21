@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{77335DFA-1CB3-428C-BF0D-B52A554D9C8C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Loading 1\Load1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Loading 2\Load2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Loading 3\Load3.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Loading 4\Load4.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Loading 5\Load5.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Load1">
+        <MSBuild Projects="Loading 1\Load1.dproj"/>
+    </Target>
+    <Target Name="Load1:Clean">
+        <MSBuild Projects="Loading 1\Load1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Load1:Make">
+        <MSBuild Projects="Loading 1\Load1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Load2">
+        <MSBuild Projects="Loading 2\Load2.dproj"/>
+    </Target>
+    <Target Name="Load2:Clean">
+        <MSBuild Projects="Loading 2\Load2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Load2:Make">
+        <MSBuild Projects="Loading 2\Load2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Load3">
+        <MSBuild Projects="Loading 3\Load3.dproj"/>
+    </Target>
+    <Target Name="Load3:Clean">
+        <MSBuild Projects="Loading 3\Load3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Load3:Make">
+        <MSBuild Projects="Loading 3\Load3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Load4">
+        <MSBuild Projects="Loading 4\Load4.dproj"/>
+    </Target>
+    <Target Name="Load4:Clean">
+        <MSBuild Projects="Loading 4\Load4.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Load4:Make">
+        <MSBuild Projects="Loading 4\Load4.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Load5">
+        <MSBuild Projects="Loading 5\Load5.dproj"/>
+    </Target>
+    <Target Name="Load5:Clean">
+        <MSBuild Projects="Loading 5\Load5.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Load5:Make">
+        <MSBuild Projects="Loading 5\Load5.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Load1;Load2;Load3;Load4;Load5"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Load1:Clean;Load2:Clean;Load3:Clean;Load4:Clean;Load5:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Load1:Make;Load2:Make;Load3:Make;Load4:Make;Load5:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

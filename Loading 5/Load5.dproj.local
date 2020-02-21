@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ActiveMobileDevice>
+		<PMacOS iOSSimulator="iPhone5"/>
+		<NoProfile Android="0052493155" Android64="0052493155"/>
+	</ActiveMobileDevice>
+	<Transactions>
+    <Transaction>2020/02/18 18:28:12.000.094,D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 1\Loading.pas=</Transaction>
+    <Transaction>2020/02/18 18:28:21.000.839,=D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 1\UntAguarde.pas</Transaction>
+    <Transaction>2020/02/18 19:19:28.000.635,D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 1\Load1.dproj=D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 1\Project1.dproj</Transaction>
+    <Transaction>2020/02/18 19:38:28.000.262,D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 3\UntAguarde.pas=</Transaction>
+    <Transaction>2020/02/18 19:38:32.000.458,=D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 3\Loading.pas</Transaction>
+    <Transaction>2020/02/18 19:40:14.000.267,D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 3\Load1.dproj=D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 3\Load3.dproj</Transaction>
+    <Transaction>2020/02/18 19:42:22.000.662,D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 5\Load5.dproj=D:\Temp\52. Boas Práticas - Loadings Diferentes\Loading 5\Load3.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
